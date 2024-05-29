@@ -3,11 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>list email</title>
 	</head>
 	<body>
+		<div id="app">
+			<h1>Lista emial</h1>
+			<ul>
+				<li v-for="email in listEmail">{{email}}</li>
+			</ul>
+		</div>
+
 		<!-- AXIOS -->
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+		<!-- VUE -->
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 		<!-- mySCRIPT -->
 		<script src="js/main.js"></script>
